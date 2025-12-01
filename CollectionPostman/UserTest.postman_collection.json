@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "588fc991-9f76-41b4-9936-eb4ec755f2ec",
+		"name": "UserTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41524226",
+		"_collection_link": "https://sae-td3-b.postman.co/workspace/SAE-TD3-B-Workspace~b43b4c00-8d7f-4720-871a-909b950bb2f6/collection/41524226-588fc991-9f76-41b4-9936-eb4ec755f2ec?action=share&source=collection_link&creator=41524226"
+	},
+	"item": [
+		{
+			"name": "Créer_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Amadou\",\r\n  \"birthdate\": \"30-11-2000\",\r\n  \"country\": \"France\",\r\n  \"phone\": \"+330214520265\",\r\n  \"gender\": \"hom\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Voir_User_by_Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Voir_all_User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
